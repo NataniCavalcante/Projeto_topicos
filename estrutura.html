@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+		/*aqui vai o nosso código css*/
+	</style>
+</head>
+<body>
+	<input id="nome" placeholder="Digite seu nome" type="text"/>
+	<input id="sobrenome" placeholder="Digite seu sobrenome" type="text"/>
+	<input id="idade" placeholder="Digite sua idade" type="text"/>
+    
+	<h2 id="saida-nome">Aqui deve aparecer o nome</h2>
+	<h2 id="saida-sobrenome">Aqui deve aparecer o sobrenome</h2>
+	<h2 id="saida-idade">Aqui deve aparecer a idade</h2>
+
+    <script>
+		
+		var nome = document.getElementById("nome")
+		var sobrenome = document.getElementById("sobrenome")
+		var idade = document.getElementById("idade")
+
+		nome.addEventListener(
+			"keyup", 
+			function(){
+				document.getElementById("saida-nome").textContent = "Você digitou: " + nome.value
+			}
+		);
+
+		sobrenome.addEventListener(
+			"keyup", 
+			function(){
+				document.getElementById("saida-sobrenome").textContent = "Você digitou: " + sobrenome.value
+			}
+		);
+
+		idade.addEventListener(
+			"keyup", 
+			function(){
+				document.getElementById("saida-idade").textContent = "Você digitou: " + idade.value
+			}
+		);		
+    </script>
+</body>
+</html>

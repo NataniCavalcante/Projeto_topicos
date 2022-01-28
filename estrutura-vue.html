@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+		/*aqui vai o nosso código css*/
+	</style>
+</head>
+<body>
+	<div id="app">
+		<input type="text" v-model="nome">
+		<input type="text" v-model="sobrenome">
+		
+		<h1 v-for="i in 10">{{nome}}</h1>
+		<h1>{{sobrenome}}</h1>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				nome: "Marcelo",
+				sobrenome: ""
+			}
+		})
+    </script>
+</body>
+</html>
