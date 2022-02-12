@@ -43,6 +43,12 @@
               </v-list-item-icon>
               <v-list-item-title>Produtos</v-list-item-title>
             </v-list-item>
+             <v-list-item to="/contato">
+              <v-list-item-icon>
+                <v-icon>mdi-phone</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>contato</v-list-item-title>
+            </v-list-item>
           </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
@@ -51,16 +57,6 @@
           <router-view />
         </v-container>
       </v-main>
-      <template>
-        <v-timeline>
-          <v-timeline-item>Mensagem de hoje</v-timeline-item>
-          <v-timeline-item class="text-right">
-            mensagem de ontem
-          </v-timeline-item>
-          <v-timeline-item>mensagem de 15/12/2021</v-timeline-item>
-        </v-timeline>
-      </template>
-      
       <template>
         <v-treeview
           rounded

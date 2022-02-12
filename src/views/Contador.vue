@@ -43,8 +43,21 @@
       </v-icon>
     </v-btn>
   </v-col>
+
+   <v-col cols="6">
+     <v-btn block color="blue"  
+    
+      class="mx-2"
+      dark @click="quantidade = 0"
+    >
+      <v-icon dark>
+        zerar contador
+      </v-icon>
+    </v-btn>
+  </v-col>
+
 </v-row>
-  </div> 
+</div> 
   
 </template>
 
